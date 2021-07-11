@@ -1,0 +1,55 @@
+Layout: 
+1. Announcement
+2. Navigation (ambil dari sumber no 2 | 7 Links, 2 submenu, 1 search) || Mobile Menu diatas kiri, logo ditengah
+3. hero / banner (ambil dari sumber no 2)
+4. select vehicles (ambil dari sumber no 2)
+5. team member (ambil dari sumber no 1)
+6. CTA (ambil dari sumber no 3)
+7. form booking (ambil dari sumber no 1)
+8. accordion
+9. footer (ambil dari sumber no 2)
+
+font: 
+1. Poppins: Bold, Semibold, Regular, Medium
+
+color:
+1. primary-color & bg-footer: #333 
+2. bg-announcement: #1A75DF
+3. text-price-select-car: #757474
+4. second-color: #fff
+5. btn-CTA & btn-navigation: #eb4038
+6. btn-banner: #FF3B32
+7. info-listCar-text: #CCCCCC
+8. bg-price-listCar: #1FCF7B
+9. overlay: rgba(0,0,0,0.23), hover: blur(14px)
+10. bg-selectCar: #F5F5F5
+11. active-selectCar-borderTop: #C93231
+12. tim-text-description: #838383
+13. form-record-order-text-description: #6F6F6F
+14. btn-buy-form-record-order: #1A75DF
+15. bg-input: #F2F2F2
+16. placeholder-input: rgba(51,51,51, 0.4)
+17. text-answer: #D032C0
+18. bg-accordion: #7E7E7E
+19. placeholder-newsletter: #949494
+20. overlay-menu: rgba(0,0,0,0.5)
+21. btn-CTA & btn-navigation hover: #f84a42
+
+borderRadius:
+1. btn-navigation & btn-banner & btn-CTA & btn-accordion: 16px 
+2. image-about & img-tim:8px
+
+boxShadow: 
+1. answer: x = 0, y = 4, blur = 10, rgba(0,0,0, 0.25)
+
+icons: 
+1. arrow right & arrow left
+2. arrow bottom
+3. phone
+4. yt, fb, github, twitter, email
+
+
+Sumber:
+1. https://dribbble.com/shots/14803777-Car-Automobile-Maintenance
+2. https://dribbble.com/shots/15739816-Automotive-Landing-Page
+3. https://dribbble.com/shots/14999129-X-Cars-Automotive-Landing-Page

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="mfebriann" />
+    <meta name="description" content="Mencari dengan mudah mobil impian kamu" />
+    <meta name="keywords" content="TailwindCSS, Cars, Landing Page" />
+    <title>CariMobil | Cari mobil impian kamu dengan mudah, semua mobil impian kamu ada disini</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- CSS  -->
+    <link rel="stylesheet" href="public/css/styles.css" />
+    <link rel="stylesheet" href="public/css/myStyles.css" />
+    <link rel="stylesheet" href="public/css/swiper-bundle.min.css" />
+  </head>
+  <body class="font-poppins text-primary-color overflow-x-hidden">
+    <div class="fixed -left-full right-0 bottom-0 top-0 flex flex-col justify-center gap-8 p-5 text-white bg-menu bg-cover bg-center w-full z-40 after:inset-0 after:bg-overlay-menu after:absolute after:-z-1 duration-500 ease-in-out sectionMenu">
+      <ul class="font-semibold tracking-wide flex flex-col gap-8 mt-22">
+        <li class="flex justify-end"><img src="assets/icons/close-line.svg" alt="close.svg" width="28" height="28" class="menu cursor-pointer duration-500 ease-out" /></li>
+        <li><a href="#" class="hover:opacity-70 duration-150 ease-out">Beranda</a></li>
+        <li><a href="#tentang" class="hover:opacity-70 duration-150 ease-out">Tentang</a></li>
+        <li><a href="#tim" class="hover:opacity-70 duration-150 ease-out">Tim</a></li>
+        <li><a href="#pertanyaan" class="hover:opacity-70 duration-150 ease-out">Pertanyaan</a></li>
+      </ul>
+      <a href="#pesan" class="font-bold tracking-wide bg-navigation w-48 text-center py-3 px-4 rounded-lg hover:bg-navigation-hover duration-200 ease-in-out">Pesan Sekarang</a>
+    </div>
+    <div class="wrap relative left-0 duration-500 ease-out">
+      <h2 class="font-bold tracking-wider bg-announcement text-white p-5 pb-3 text-center text-xs leading-6 rounded-br-thirdRadius rounded-bl-thirdRadius sm:text-sm lg:text-lg">Tanggal 5 Agustus 2021 nanti terdapat pameran mobil di Senayan</h2>
+      <header class="bg-white mt-8 p-5 flex flex-col items-center fixed w-full duration-500 ease-out right-0 z-30 lg:px-10 lg:py-5">
+        <nav class="flex items-center justify-between w-full">
+          <div class="w-7 h-7 bg-menu-line bg-no-repeat cursor-pointer md:hidden"></div>
+          <h1 class="font-semibold tracking-wider text-2xl mx-auto md:mx-0 hover:opacity-80 lg:text-3xl"><a href="#">CariMobil</a></h1>
+          <ul class="font-semibold tracking-wide hidden md:flex md:items-center md:gap-5 lg:gap-8">
+            <li><a href="#" class="md:hover:opacity-70 md:duration-150 md:ease-out">Beranda</a></li>
+            <li><a href="#tentang" class="md:hover:opacity-70 md:duration-150 md:ease-out">Tentang</a></li>
+            <li><a href="#tim" class="md:hover:opacity-70 md:duration-150 md:ease-out">Tim</a></li>
+            <li><a href="#pertanyaan" class="md:hover:opacity-70 md:duration-150 md:ease-out">Pertanyaan</a></li>
+          </ul>
+          <a href="#pesan" class="font-bold tracking-wide bg-navigation w-48 py-3 px-4 hidden md:hover:bg-navigation-hover md:duration-200 md:ease-in-out md:flex md:justify-center md:text-white md:rounded-lg">Pesan Sekarang</a>
+        </nav>
+      </header>
+      <section aria-label="banner" class="pt-36 px-5 md:pt-52 md:flex md:gap-5 md:items-center md:justify-between md:w-full lg:pl-10 xl:pt-20">
+        <div class="tracking-wider">
+          <h1 class="font-semibold text-3xl leading-10 lg:text-5xl xl:leading-extra">Semua mobil impian Kamu ada disini</h1>
+          <p class="mt-5 mb-7 xl:leading-7">Temukan mobil impianmu, karena semua merk mobil ada disini. Maka dari itu tidak repot untuk mencarinya.</p>
+          <a href="#cariMobil" class="bg-banner font-bold text-white py-2.5 px-6 rounded-lg hover:bg-navigation duration-150 ease-in-out">Cari Mobil</a>
+        </div>
+        <img src="assets/images/select-car1.webp" alt="Banner image" class="max-w-full mx-auto md:w-96 md:mx-0 lg:max-w-full xl:w-full" id="banner-img" />
+      </section>
+      <section id="tentang" class="px-5 mt-20 flex flex-col gap-24 md:px-10 lg:flex-row lg:gap-0 lg:justify-between lg:mt-40">
+        <div class="bg-about bg-center bg-cover rounded-lg -scale-x-1 w-full mx-auto h-52 relative after:absolute after:bg-thumb-about after:bg-cover after:-scale-x-1 after:h-36 after:w-44 after:rounded-lg after:-bottom-14 sm:after:w-60 md:h-72 md:after:w-72 lg:after:-left-24 lg:after:-bottom-20 lg:after:h-48"></div>
+        <div class="lg:pl-36">
+          <p class="leading-relaxed lg:leading-loose"><span class="font-bold tracking-wider text-3xl lg:text-4xl">CariMobil</span> merupakan perusahaan yang bergerak industri manufaktur otomatif di Indonesia. Semua mobil dari yang antik maupun yang sport semua ada disini.</p>
+          <p class="leading-relaxed mt-8 lg:leading-loose">Disini juga menyediakan layanan untuk memperbaiki mesin mobil, membersihkan mobil, dan masih banyak lagi. Showroom CariMobil ini sendiri sudah berdiri sejak tahun 2010.</p>
+          <p class="leading-relaxed mt-8 lg:leading-loose">Perusahaan ini juga sudah mendapatkan banyak sekali penghargaan, dimana bisa lebih meningkatkan kualitas perusahaan di mata pembeli.</p>
+        </div>
+      </section>
+    </div>
+    <section class="mt-20 lg:flex lg:mt-48 xl:mt-52" id="cariMobil">
+      <div class="px-5 md:px-10 lg:flex lg:flex-col lg:justify-between lg:-mr-300 xl:-mr-32">
+        <div>
+          <h2 class="font-medium text-xl lg:text-2xl">Semua Mobil</h2>
+          <p class="mt-5 lg:text-md">Pilih mobil kesukaanmu disini dan temukan lebih banyak lagi.</p>
+        </div>
+        <div class="flex items-center justify-center gap-5 mt-5">
+          <img src="assets/icons/arrow-left-line.svg" alt="arrow-left.svg" width="35" height="35" id="prev" class="cursor-pointer" />
+          <img src="assets/icons/arrow-right-line.svg" alt="arrow-right.svg" width="35" height="35" id="next" class="cursor-pointer" />
+        </div>
+      </div>
+      <div class="mt-10 inline-flex bg-selectCar md:inline-flex lg:relative lg:-right-500 lg:mt-0 xl:-right-96 lg:overflow-x-hidden lg:w-xlm xl:w-xll" aria-label="select-car">
+        <figure aria-label="card-car" class="bg-selectCar flex flex-col items-center pb-8 w-80 px-3 duration-200 ease-in-out hover:bg-hover-selectCar relative -ml-80 lg:w-72 lg:items-start lg:-ml-0">
+          <img src="assets/images/select-car2.webp" alt="ford-mustang-gt.webp" class="h-52" />
+          <h3 class="font-semibold lg:pl-11">Ford Mustang GT</h3>
+          <p class="text-price-select-car tracking-wide font-medium lg:pl-11">Rp.600.000.000</p>
+        </figure>
+        <figure aria-label="card-car" class="bg-selectCar flex flex-col items-center pb-8 w-80 px-3 duration-200 ease-in-out hover:bg-hover-selectCar active-car relative lg:w-72 lg:items-start">
+          <img src="assets/images/select-car1.webp" alt="ferrari-458-italia.webp" class="h-52" />
+          <h3 class="font-semibold lg:pl-5">Ferrari 458 Italia</h3>
+          <p class="text-price-select-car tracking-wide font-medium lg:pl-5">Rp.14.850.000.000</p>
+        </figure>
+        <figure aria-label="card-car" class="bg-selectCar flex flex-col items-center pb-8 w-80 px-3 duration-200 ease-in-out hover:bg-hover-selectCar relative lg:w-72 lg:items-start">
+          <img src="assets/images/select-car3.webp" alt="porsche-911.webp" class="h-52" />
+          <h3 class="font-semibold lg:pl-5">Porsche 911</h3>
+          <p class="text-price-select-car tracking-wide font-medium lg:pl-5">Rp.5.900.000.000</p>
+        </figure>
+        <figure aria-label="card-car" class="bg-selectCar flex flex-col items-center pb-8 w-80 px-3 duration-200 ease-in-out hover:bg-hover-selectCar relative lg:w-72 lg:items-start">
+          <img src="assets/images/select-car4.webp" alt="mercedes-benz.webp" class="h-52" />
+          <h3 class="font-semibold lg:pl-12">Mercedes Benz</h3>
+          <p class="text-price-select-car tracking-wide font-medium lg:pl-12">Rp.700.000.000</p>
+        </figure>
+      </div>
+    </section>
+    <section id="tim" aria-label="select-team" class="pl-5 mt-20 md:pl-10">
+      <h2 class="font-bold text-xl tracking-wide pr-5 md:pr-10">Kami mempunyai ahilnya & memiliki tim yang handal</h2>
+      <p class="mt-5 pr-5 tracking-wide md:pr-10">Memiliki tim yang handal untuk memperbaiki kerusakan pada mobilmu.</p>
+      <div class="swiper-container swiperTeam h-full w-full mt-8">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide h-full">
+            <img src="assets/images/person1.webp" alt="jonathan.webp" class="rounded-lg object-cover w-csm h-52 sm:h-64 lg:h-csm block" />
+            <h3 class="font-bold tracking-wide mt-5 lg:text-xl">Jonathan</h3>
+            <p class="font-medium text-tim-text-description mt-1 tracking-wide">8 tahun pengalaman</p>
+          </div>
+          <div class="swiper-slide h-full">
+            <img src="assets/images/person2.webp" alt="andi-kenedi.webp" class="rounded-lg object-cover w-csm h-52 sm:h-64 lg:h-csm block" />
+            <h3 class="font-bold tracking-wide mt-5 lg:text-xl">Andi Kenedi</h3>
+            <p class="font-medium text-tim-text-description mt-1 tracking-wide">10 tahun pengalaman</p>
+          </div>
+          <div class="swiper-slide h-full">
+            <img src="assets/images/person3.webp" alt="andrew.webp" class="rounded-lg object-cover w-csm h-52 sm:h-64 lg:h-csm block" />
+            <h3 class="font-bold tracking-wide mt-5 lg:text-xl">Andrew</h3>
+            <p class="font-medium text-tim-text-description mt-1 tracking-wide">6 tahun pengalaman</p>
+          </div>
+          <div class="swiper-slide h-full">
+            <img src="assets/images/person4.webp" alt="williams.webp" class="rounded-lg object-cover w-csm h-52 sm:h-64 lg:h-csm block" />
+            <h3 class="font-bold tracking-wide mt-5 lg:text-xl">Williams</h3>
+            <p class="font-medium text-tim-text-description mt-1 tracking-wide">12 tahun pengalaman</p>
+          </div>
+          <div class="swiper-slide h-full">
+            <img src="assets/images/person5.webp" alt="gorge-nikole.webp" class="rounded-lg object-cover w-csm h-52 sm:h-64 lg:h-csm block" />
+            <h3 class="font-bold tracking-wide mt-5 lg:text-xl">Gorge Nikole</h3>
+            <p class="font-medium text-tim-text-description mt-1 tracking-wide">15 tahun pengalaman</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section aria-label="call-to-action" class="mt-32 p-5 pt-10 bg-cta bg-cover bg-center relative text-white after:absolute after:inset-0 after:bg-overlay-cta sm:pl-20 md:pr-10 lg:pt-20">
+      <div class="relative z-10 tracking-wide">
+        <div class="lg:pl-20">
+          <h1 class="font-bold text-2xl tracking-wider md:text-3xl lg:text-4xl">25% Diskon dan Penawaran Spesial</h1>
+          <p class="mt-3 sm:pr-40 lg:text-xl lg:leading-sm xl:w-ctalg xl:pr-64">Untuk Jum’at besok semua harga mobil diskon 25% dan mendapatkan tambahan garansi perbaikan selama satu bulan.</p>
+          <a href="#pesan" class="mt-5 inline-block bg-navigation hover:bg-navigation-hover px-5 py-2.5 font-bold rounded-lg tracking-wider duration-200 ease-in-out">Pesan Sekarang</a>
+        </div>
+        <div class="mt-10 sm:flex sm:flex-col sm:items-end">
+          <h2 class="font-semibold lg:text-xl">Hubungi kami untuk booking kendaraan</h2>
+          <div class="mt-3 flex items-center gap-2">
+            <img src="assets/icons/phone-fill.svg" alt="phone.svg" class="w-8" />
+            <p class="font-semibold lg:text-xl">+62 123 4567 8910</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pl-5 mt-20 md:pl-10 md:mt-32 lg:mt-40" id="pesan">
+      <h2 class="font-bold text-xl text-center tracking-wider md:text-3xl">Daftar Mobil</h2>
+      <div class="swiper-container swiperOrderCars w-full h-full mt-10">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide bg-order1 bg-cover bg-center relative text-white flex gap-2 flex-col justify-end pb-2.5 px-2.5 tracking-wide after:absolute after:inset-0 after:bg-overlay-cta">
+            <div class="absolute -bottom-5 left-0 right-0 flex justify-center items-center z-11 h-0 w-full backdrop-blur-sm duration-300 ease-in-out">
+              <a href="#form" class="font-bold text-xl underline uppercase">Beli Sekarang</a>
+            </div>
+            <h2 class="relative z-10 font-bold">Ferrari 458 Italia</h2>
+            <p class="relative z-10 font-bold bg-price-listCar p-1 w-pricesm text-center text-sm">Rp. 14.850.000.000</p>
+            <div class="relative z-10 flex items-center justify-between font-medium text-xs md:text-sm">
+              <div>
+                <p class="text-info-listCar-text">Transmission</p>
+                <p>Automatic</p>
+              </div>
+              <div>
+                <p class="text-info-listCar-text">Fuel</p>
+                <p>Electric</p>
+              </div>
+              <div>
+                <p class="text-info-listCar-text">Passenger</p>
+                <p>2 Persons</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide bg-order2 bg-cover bg-center relative text-white flex gap-2 flex-col justify-end pb-2.5 px-2.5 tracking-wide after:absolute after:inset-0 after:bg-overlay-cta">
+            <div class="absolute -bottom-5 left-0 right-0 flex justify-center items-center z-11 h-0 w-full backdrop-blur-sm duration-300 ease-in-out">
+              <a href="#form" class="font-bold text-xl underline uppercase">Beli Sekarang</a>
+            </div>
+            <h2 class="relative z-10 font-bold">Ford Mustang GT</h2>
+            <p class="relative z-10 font-bold bg-price-listCar p-1 w-pricesm text-center text-sm">Rp. 650.000.000</p>
+            <div class="relative z-10 flex items-center justify-between font-medium text-xs md:text-sm">
+              <div>
+                <p class="text-info-listCar-text">Transmission</p>
+                <p>Automatic</p>
+              </div>
+              <div>
+                <p class="text-info-listCar-text">Fuel</p>
+                <p>Electric</p>
+              </div>
+              <div>
+                <p class="text-info-listCar-text">Passenger</p>
+                <p>2 Persons</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide bg-order3 bg-cover bg-center relative text-white flex gap-2 flex-col justify-end pb-2.5 px-2.5 tracking-wide after:absolute after:inset-0 after:bg-overlay-cta">
+            <div class="absolute -bottom-5 left-0 right-0 flex justify-center items-center z-11 h-0 w-full backdrop-blur-sm duration-300 ease-in-out">
+              <a href="#form" class="font-bold text-xl underline uppercase">Beli Sekarang</a>
+            </div>
+            <h2 class="relative z-10 font-bold">Porsche 911</h2>
+            <p class="relative z-10 font-bold bg-price-listCar p-1 w-pricesm text-center text-sm">Rp. 5.900.000.000</p>
+            <div class="relative z-10 flex items-center justify-between font-medium text-xs md:text-sm">
+              <div>
+                <p class="text-info-listCar-text">Transmission</p>
+                <p>Automatic</p>
+              </div>
+              <div>
+                <p class="text-info-listCar-text">Fuel</p>
+                <p>Electric</p>
+              </div>
+              <div>
+                <p class="text-info-listCar-text">Passenger</p>
+                <p>2 Persons</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide bg-order4 bg-cover bg-center relative text-white flex gap-2 flex-col justify-end pb-2.5 px-2.5 tracking-wide after:absolute after:inset-0 after:bg-overlay-cta">
+            <div class="absolute -bottom-5 left-0 right-0 flex justify-center items-center z-11 h-0 w-full backdrop-blur-sm duration-300 ease-in-out">
+              <a href="#form" class="font-bold text-xl underline uppercase">Beli Sekarang</a>
+            </div>
+            <h2 class="relative z-10 font-bold">Mercedes Benz</h2>
+            <p class="relative z-10 font-bold bg-price-listCar p-1 w-pricesm text-center text-sm">Rp. 700.000.000</p>
+            <div class="relative z-10 flex items-center justify-between font-medium text-xs md:text-sm">
+              <div>
+                <p class="text-info-listCar-text">Transmission</p>
+                <p>Automatic</p>
+              </div>
+              <div>
+                <p class="text-info-listCar-text">Fuel</p>
+                <p>Electric</p>
+              </div>
+              <div>
+                <p class="text-info-listCar-text">Passenger</p>
+                <p>2 Persons</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-40 px-5 md:px-10" id="form">
+      <div class="w-full p-2.5 md:px-5 bg-form bg-top bg-cover">
+        <form class="bg-white px-2.5 py-5 rounded-lg md:w-formmd md:my-7 md:ml-5 md:px-5" onsubmit="return sendData()">
+          <h1 class="font-bold text-xl tracking-wider md:text-3xl">Catat pesananmu</h1>
+          <p class="text-sm text-form-text-description mt-2">Jika kamu tertarik dengan mobil kami, silahkan lanjutkan dengan melengkapi form ini untuk pembelian mobil.</p>
+          <div class="mt-3 flex flex-col gap-3 md:flex-row">
+            <input type="text" placeholder="Nama kamu" class="bg-input p-2.5 w-full rounded-lg" id="name" autocomplete="off" required />
+            <input type="email" placeholder="Email kamu" class="bg-input p-2.5 w-full rounded-lg" id="email" required autocomplete="off" />
+          </div>
+          <div class="mt-3 flex flex-col gap-3 md:flex-row">
+            <div class="relative w-full">
+              <input type="number" placeholder="Nomor telepon kamu" class="bg-input p-2.5 w-full rounded-lg" id="phone" />
+              <span class="absolute -bottom-5 font-medium left-0 opacity-0 text-green-500 z-10">Sisa karakter: <span id="sisaKarakter"></span></span>
+            </div>
+            <div class="bg-input pr-2.5 w-full rounded-lg flex items-center justify-between relative">
+              <input type="text" placeholder="Pilih mobil" class="bg-input p-2.5 w-full rounded-lg" list="cars" id="listCars" autocomplete="off" required />
+              <datalist id="cars">
+                <option value="Ferrari 458 Italia"></option>
+                <option value="Ford Mustang GT"></option>
+                <option value="Porsche 911"></option>
+                <option value="Mercedes Benz"></option>
+              </datalist>
+              <img src="assets/icons/arrow-drop-down-line-form.svg" alt="" class="w-12 h-12 absolute right-0" />
+            </div>
+          </div>
+          <div class="relative">
+            <textarea cols="30" rows="3" class="mt-3 bg-input p-2.5 w-full rounded-lg md:h-32" placeholder="Pesan kamu" id="pesanInput" maxlength="200"></textarea>
+            <span class="absolute -bottom-5 font-medium left-0 opacity-0 text-green-500 z-10">Sisa karakter: <span id="sisaKarakterPesan"></span></span>
+          </div>
+          <button class="bg-buyForm px-2.5 py-2 w-full rounded-2xl mt-5 text-white font-bold tracking-wider duration-200 ease-out hover:bg-buyFormHover cursor-pointer flex justify-center" id="submit">Beli Sekarang</button>
+        </form>
+      </div>
+    </section>
+    <section class="mt-32 sm:mt-40 px-5 md:px-10" id="pertanyaan">
+      <h1 class="font-bold text-3xl text-center tracking-wide">Pertanyaan & <span class="text-answer">Jawaban</span></h1>
+      <div class="my-8 font-bold text-white flex flex-col gap-5">
+        <div class="lg:w-ctalg lg:mx-auto">
+          <div class="flex items-center gap-3 justify-between bg-accordion p-2.5 rounded-xl duration-300 ease-in-out cursor-pointer sm:px-5 lg:px-10 lg:text-lg">
+            <h3 class="tracking-wide">Apakah akan kena ongkir?</h3>
+            <img src="assets/icons/arrow-drop-down-line.svg" alt="dropdown-line.svg" width="55" height="55" class="duration-300 ease-in-out rotate-0" />
+          </div>
+          <div class="shadow-primaryShadow text-primary-color font-semibold tracking-wide duration-300 ease-out opacity-0 h-0 overflow-y-hidden answer sm:px-5 lg:px-10 lg:text-lg">
+            <p>Tidak akan dikenakan ongkir lagi, dikarenakan semua pembiayaan ongkir ditanggung perusahaan.</p>
+          </div>
+        </div>
+        <div class="lg:w-ctalg lg:mx-auto">
+          <div class="flex items-center gap-3 justify-between bg-accordion p-2.5 rounded-xl duration-300 ease-in-out cursor-pointer sm:px-5 lg:px-10 lg:text-lg">
+            <h3 class="tracking-wide">Apakah akan selalu ada penawaran spesial?</h3>
+            <img src="assets/icons/arrow-drop-down-line.svg" alt="dropdown-line.svg" width="55" height="55" class="duration-300 ease-in-out rotate-0" />
+          </div>
+          <div class="shadow-primaryShadow text-primary-color font-semibold tracking-wide duration-300 ease-out opacity-0 h-0 overflow-y-hidden answer sm:px-5 lg:px-10 lg:text-lg">
+            <p>Jika akan diadakan penawaran spesial, akan kami hubungi melalui email. Oleh karena itu jangan lupa untuk mengisi kolom newsletter dibagian footer. Untuk berita terupdate.</p>
+          </div>
+        </div>
+        <div class="lg:w-ctalg lg:mx-auto">
+          <div class="flex items-center gap-3 justify-between bg-accordion p-2.5 rounded-xl duration-300 ease-in-out cursor-pointer sm:px-5 lg:px-10 lg:text-lg">
+            <h3 class="tracking-wide">Apa harga bisa di nego?</h3>
+            <img src="assets/icons/arrow-drop-down-line.svg" alt="dropdown-line.svg" width="55" height="55" class="duration-300 ease-in-out rotate-0" />
+          </div>
+          <div class="shadow-primaryShadow text-primary-color font-semibold tracking-wide duration-300 ease-out opacity-0 h-0 overflow-y-hidden answer sm:px-5 lg:px-10 lg:text-lg">
+            <p>Harga sudah tetap dan tidak dapat di nego atau tawar lagi.</p>
+          </div>
+        </div>
+        <div class="lg:w-ctalg lg:mx-auto">
+          <div class="flex items-center gap-3 justify-between bg-accordion p-2.5 rounded-xl duration-300 ease-in-out cursor-pointer sm:px-5 lg:px-10 lg:text-lg">
+            <h3 class="tracking-wide">Dimana letak kantor pusatnya?</h3>
+            <img src="assets/icons/arrow-drop-down-line.svg" alt="dropdown-line.svg" width="55" height="55" class="duration-300 ease-in-out rotate-0" />
+          </div>
+          <div class="shadow-primaryShadow text-primary-color font-semibold tracking-wide duration-300 ease-out opacity-0 h-0 overflow-y-hidden answer sm:px-5 lg:px-10 lg:text-lg">
+            <p>Di Jakarta Pusat, tepatnya di kawasan Kemayoran.</p>
+          </div>
+        </div>
+        <div class="lg:w-ctalg lg:mx-auto">
+          <div class="flex items-center gap-3 justify-between bg-accordion p-2.5 rounded-xl duration-300 ease-in-out cursor-pointer sm:px-5 lg:px-10 lg:text-lg">
+            <h3 class="tracking-wide">Apa ada garansi ketika perbaikan mobil?</h3>
+            <img src="assets/icons/arrow-drop-down-line.svg" alt="dropdown-line.svg" width="55" height="55" class="duration-300 ease-in-out rotate-0" />
+          </div>
+          <div class="shadow-primaryShadow text-primary-color font-semibold tracking-wide duration-300 ease-out opacity-0 h-0 overflow-y-hidden answer sm:px-5 lg:px-10 lg:text-lg">
+            <p>Ada, itu berlangsung 2 tahun setelah pembelian mobil. Lewat dari 2 tahun maka akan dikenakan biaya, jika melakukan perbaikan di tempat kami.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-footer text-white h-full p-5 pt-14 relative md:px-10 md:pb-20 md:flex md:items-center md:justify-between">
+      <aside>
+        <div>
+          <h1 class="text-2xl font-semibold tracking-wide md:text-3xl">CariMobil</h1>
+          <p class="mt-3 w-52">Semua mobil impian Kamu ada disini.</p>
+        </div>
+        <div class="mt-5 md:mt-7">
+          <h2 class="font-semibold">Follow Kami</h2>
+          <ul class="flex items-center gap-3 mt-2">
+            <li>
+              <a href="#"><img src="assets/icons/youtube-fill.svg" alt="youtube-icon.svg" title="Youtube" class="hover:opacity-80 300ms ease-in" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="assets/icons/twitter-fill.svg" alt="twitter-icon.svg" title="Twitter" class="hover:opacity-80 300ms ease-in" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="assets/icons/facebook-circle-fill.svg" alt="facebook-icon.svg" title="Facebook" class="hover:opacity-80 300ms ease-in" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="assets/icons/github-fill.svg" alt="github-icon.svg" title="Github" class="hover:opacity-80 300ms ease-in" /></a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <aside class="mt-5 md:mt-0">
+        <div>
+          <h2 class="font-semibold">Newsletter</h2>
+          <form onsubmit="return sendData()" class="mt-3 border-solid border-placeholder-newsletter border-b-2 flex items-center justify-between gap-3 w-64">
+            <input type="email" placeholder="emailKamu@gmail.com" class="bg-transparent w-full focus:outline-none text-placeholder-newsletter text-sm" required i />
+            <input type="submit" class="font-semibold bg-transparent cursor-pointer" id="subscribe" value="Subscribe" />
+          </form>
+        </div>
+        <div class="mt-5 md:mt-10">
+          <h2 class="font-semibold">Kontak Kami</h2>
+          <div class="flex items-center gap-3 mt-3">
+            <img src="assets/icons/mail-fill.svg" alt="email-icon.svg" />
+            <p>carimobil@carimobil.com</p>
+          </div>
+        </div>
+      </aside>
+      <h2 class="font-semibold tracking-wide mt-10 text-center md:absolute md:bottom-4 md:left-0 md:right-0">Copyright. 2021 - CariMobil</h2>
+    </footer>
+
+    <div id="notifikasi" class="fixed z-20 inset-0 flex px-2.5 items-center justify-center opacity-0 scale-0 duration-300 ease-in-out">
+      <div class="bg-white border-2 border-solid border-red-400 rounded-lg pt-5 pb-10 px-2.5 w-80 relative flex flex-col items-center gap-3">
+        <img src="assets/images/notifError.webp" alt="notif-error" width="100" height="100" />
+        <h1 class="font-bold text-lg hidden text-center" id="phoneLost">Nomor telepon tidak boleh lebih dari 12 digit<sup class="text-red-400">*</sup></h1>
+        <h1 class="font-bold text-lg hidden text-center" id="selectCarLost">Pilihan Mobil wajib diisi<sup class="text-red-400">*</sup></h1>
+        <span class="absolute -bottom-5 z-20 text-center left-1/2 -translate-x-1/2 bg-green-700 tracking-wider cursor-pointer font-bold text-white px-5 py-2 rounded-lg" id="close">Mengerti!</span>
+      </div>
+    </div>
+    <div id="success" class="hidden fixed z-40 inset-0 bottom-0 items-center justify-center px-2.5 overflow-y-auto duration-300 ease-in-out">
+      <div class="bg-green-600 text-white p-4 pb-10 rounded-lg shadow-successShadow relative flex flex-col gap-1 sm:p-10 sm:w-formmd">
+        <h1 class="text-xl font-bold tracking-wider mb-2 lg:text-3xl">Apakah data sudah benar?</h1>
+        <h2>Nama: <span id="nameSuccess" class="font-semibold tracking-wide"></span></h2>
+        <h2>Email: <span id="emailSuccess" class="font-semibold tracking-wide"></span></h2>
+        <h2>Nomor telepon: <span id="phoneSuccess" class="font-semibold tracking-wide">-</span></h2>
+        <h2>Pilihan mobil: <span id="selectCarSuccess" class="font-semibold tracking-wide"></span></h2>
+        <h2>Pesan: <span id="messageSuccess" class="font-semibold tracking-wide">-</span></h2>
+
+        <div class="mt-5 absolute flex justify-center items-center -bottom-3 left-0 right-0 gap-5">
+          <button id="sudah" class="font-bold tracking-wider bg-buyFormHover px-3 py-2 rounded-lg duration-200 ease-out hover:opacity-80">Sudah</button>
+          <button id="belum" class="font-bold tracking-wider bg-banner px-3 py-2 rounded-lg duration-200 ease-out hover:opacity-80">Belum</button>
+        </div>
+      </div>
+    </div>
+    <script src="public/js/script.js"></script>
+    <script src="public/js/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiperTeam", {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        breakpoints: {
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 20,
+          },
+        },
+      });
+
+      const swiperOrderCars = new Swiper(".swiperOrderCars", {
+        slidesPerView: 1.2,
+        spaceBetween: 20,
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

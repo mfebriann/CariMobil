@@ -980,6 +980,10 @@ video {
   height: 3rem;
 }
 
+.h-14 {
+  height: 3.5rem;
+}
+
 .h-\[3\.23rem\] {
   height: 3.23rem;
 }
@@ -1058,6 +1062,10 @@ video {
 
 .w-12 {
   width: 3rem;
+}
+
+.w-14 {
+  width: 3.5rem;
 }
 
 .w-52 {
@@ -1168,11 +1176,6 @@ video {
 
 .-translate-x-3 {
   --tw-translate-x: -0.75rem;
-  transform: var(--tw-transform);
-}
-
-.rotate-0 {
-  --tw-rotate: 0deg;
   transform: var(--tw-transform);
 }
 

@@ -1,0 +1,98 @@
+html {
+  scroll-behavior: smooth;
+}
+
+figure.active-car {
+  background-color: #fff !important;
+}
+
+figure.active-car::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background-color: #c93231;
+}
+
+#banner-img.move,
+#success {
+  animation: move 500ms ease-out;
+}
+
+@keyframes move {
+  0% {
+    opacity: 0;
+    transform: translateX(1000px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.swiper-slide:hover .backdrop-blur-sm {
+  height: 100%;
+  bottom: 0;
+}
+
+.swiper-slide:first-child a:hover {
+  color: rgb(253, 71, 71);
+}
+
+.swiper-slide:nth-child(2) a:hover {
+  color: #b9b9b9;
+}
+.swiper-slide:nth-child(3) a:hover {
+  color: #555555;
+}
+.swiper-slide:last-child a:hover {
+  color: #ffec3c;
+}
+
+input::-webkit-calendar-picker-indicator {
+  visibility: hidden;
+}
+
+textarea {
+  resize: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+img[alt="loader.svg"] {
+  animation: loaderInfinite 1s linear infinite;
+}
+
+@keyframes loaderInfinite {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#tim,
+#pertanyaan,
+#pesan,
+#form,
+#cariMobil {
+  scroll-margin-top: 8em;
+}
+
+#tentang {
+  scroll-margin-top: 10em;
+}

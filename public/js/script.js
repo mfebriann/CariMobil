@@ -254,7 +254,7 @@ const answersContainer = document.querySelectorAll(".answer");
 
 answersContainer.forEach((answerContainer) => {
   answerContainer.previousElementSibling.addEventListener("click", function () {
-    if (this.children[1].classList.contains("rotate-0")) {
+    if (this.children[1].classList.contains("dropdown")) {
       answerContainer.classList.replace("opacity-0", "opacity-1");
       answerContainer.classList.replace("h-0", "h-full");
       answerContainer.classList.add("px-2.5");
@@ -272,13 +272,15 @@ answersContainer.forEach((answerContainer) => {
 const questionsContainer = document.querySelectorAll(".bg-accordion");
 questionsContainer.forEach((questionContainer) => {
   questionContainer.addEventListener("click", function () {
-    if (this.children[1].classList.contains("rotate-0")) {
-      this.children[1].classList.replace("rotate-0", "rotate-180");
+    if (this.children[1].classList.contains("dropdown")) {
+      this.children[1].classList.remove("dropdown");
+      this.children[1].style.transform = "rotate(180deg)";
       this.classList.remove("rounded-xl");
       this.classList.add("rounded-tl-xl");
       this.classList.add("rounded-tr-xl");
     } else {
-      this.children[1].classList.replace("rotate-180", "rotate-0");
+      this.children[1].classList.add("dropdown");
+      this.children[1].style.transform = "rotate(0deg)";
       this.classList.remove("rounded-tl-xl");
       this.classList.remove("rounded-tr-xl");
       this.classList.add("rounded-xl");
